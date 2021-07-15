@@ -89,7 +89,7 @@ footer {
 .player-name {
   font-size: 28px;
   font-weight: 700;
-  color: #9296ac;
+  color: #ff1793c9;
   margin-bottom: 0;
 }
 .player-detail p {
@@ -132,7 +132,7 @@ footer {
   font-weight: 700;
   letter-spacing: 0.07rem;
   font-size: 12px;
-  color: rgb(212, 73, 73);
+  color: rgb(6, 255, 27);
   margin-bottom: 0;
 }
 .topic span {
