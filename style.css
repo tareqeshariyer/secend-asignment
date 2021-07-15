@@ -1,0 +1,250 @@
+/* font  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+/* Utilities */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+main,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 75%;
+  background: rgb(35, 255, 244);
+  padding: 10px;
+}
+.section-title {
+  text-align: center;
+  font-size: 38px;
+  color: #53df4e;
+}
+/* Header Part  */
+.header-banner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(496px, 1fr));
+  background: #2d25a0;
+  height: 677px;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+/* .left-part {
+  grid-column: span 6;
+} */
+.headerBannerTitle {
+  font-size: 64px;
+  line-height: 80px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+.anchor-link {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  background: #e02c6d;
+  padding: 10px 24px;
+}
+.right-part {
+  /* grid-column: span 6; */
+  transition: transform ease-out 1.5s;
+}
+.right-part:hover {
+  transform: skew(-20deg, 20deg) scale(1.01);
+}
+.banner-img img {
+  width: 557px;
+  height: 438px;
+}
+/* Main Section  */
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-column-gap: 25px;
+}
+.player {
+  width: 85%;
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  padding: 12px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  margin-bottom: 27px;
+}
+.thumbnail {
+  display: grid;
+  justify-items: center;
+}
+.player-detail,
+.thumbnail img {
+  width: 100%;
+}
+.player-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #9296ac;
+  margin-bottom: 0;
+}
+.player-detail p {
+  margin-top: 10px;
+  color: #8a2929;
+  font-size: 16px;
+}
+/* Post Section  */
+.post-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 25px;
+  grid-column-gap: 10px;
+  justify-items: center;
+
+  margin-bottom: 20px;
+  padding: 45px 0;
+  box-shadow: 0 0 30px rgb(180, 16, 16);
+}
+.post-box {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.post-thumbnail {
+  display: flex;
+  justify-content: center;
+}
+.post-thumbnail img {
+  width: 100%;
+}
+.post-detail {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.post-detail .topic h3 {
+  font-weight: 700;
+  letter-spacing: 0.07rem;
+  font-size: 12px;
+  color: rgb(212, 73, 73);
+  margin-bottom: 0;
+}
+.topic span {
+  font-weight: 400;
+}
+.post-heading h2 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+.post-heading h2 a {
+  text-decoration: none;
+  color: #000;
+}
+.post-heading h2:hover > a {
+  color: #627988;
+}
+.post-info p {
+  color: rgb(165, 89, 89);
+  margin-bottom: 0;
+}
+.post-info p a {
+  text-decoration: none;
+}
+/* Gallery Section  */
+.photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 5px;
+  grid-auto-flow: dense;
+  padding: 5px 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 30px gray;
+}
+.photos img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.vertical {
+  grid-row: span 2;
+}
+.horizontal {
+  grid-column: span 2;
+}
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+/* Footer Part  */
+.footer-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-img img {
+  width: 483;
+  height: 110px;
+}
+
+.footer-icons .fab,
+.far {
+  background: #e7e7e8;
+  border-radius: 50%;
+  padding: 12px;
+  margin: 0px 14px;
+  color: #969bab;
+}
+.fab:hover,
+.far:hover {
+  background: #3cff00;
+  color: #000;
+}
+.footer-info p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 688px) {
+  .header-banner {
+    height: 700px;
+    justify-items: center;
+  }
+  .headerBannerTitle {
+    font-size: 36px;
+    line-height: 50px;
+    font-size: bold;
+  }
+  .right-part:hover {
+    transform: skew(-20deg, 20deg) scale(0.7);
+  }
+  .banner-img img {
+    width: 329px;
+    height: 260px;
+  }
+
+  .players,.header-banner,
+  .post-boxes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-img img {
+    width: 222px;
+  }
+}
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .header-banner {
+    height: 900px;
+  }
+  .players {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
